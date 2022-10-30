@@ -1,0 +1,146 @@
+/* -----------DEFAULT SETTING----------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+                                                /* -----------LIGHT THEME MODE---------- */
+/* ------------CSS BODY STYLING------------ */
+
+body {
+    --background-color: white;
+    --transition-delay: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: var(--transition-delay);
+    /* border: 2px solid red; */
+}
+
+/* -----------CSS CONTAINER STYLING----------- */
+
+.setting-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid rgb(0, 255, 64); */
+    height: 15vh;
+    width: 100vw;
+}
+
+.setting-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    /* border: 2px solid rgb(255, 0, 64); */
+}
+
+/* -----------CSS ICON STYLING-------------- */
+
+.sun {
+    color: orangered;
+    /* border: 2px solid rgb(13, 0, 255); */
+    transition: opacity var(--transition-delay);
+    position: absolute;
+    top: 10%;
+}
+
+.moon {
+    color: yellow;
+    transition: opacity var(--transition-delay);
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+}
+
+/* --------------CSS TEXT STYLING---------- */
+
+.inner-text-light {
+    margin-left: 4px;
+}
+
+.heading-text-light {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+/* ------------CSS BUTTON STYLING------------- */
+
+.btn {
+    width: 13%;
+    height: 44px;
+    margin-top: 15px;
+    margin-bottom: 2%;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: orangered;
+    color: white;
+    transition: width 2s, height 2s;
+}
+
+.btn:hover {
+    width: 20%;
+    height: 60px;
+}
+
+/* -----------CSS SWAPP STYLING--------- */
+
+.swapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+                              /* --------------DARK THEME MODE--------------- */
+
+/* -----------CSS BODY STYLING------------- */
+
+body.bodydark {
+    --background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+.dark {
+    width: 13%;
+    height: 44px;
+    margin-top: 15px;
+    margin-bottom: 2%;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: yellow;
+    color: black;
+    transition: width 2s, height 2s;
+}
+
+/* ----------------CSS TEXT STYLING----------------*/
+
+.inner-text-dark {
+    color: black;
+}
+
+.heading-text-dark {
+    color: white;
+}
+
+/* --------------CSS ICON'S DISPLAY STYLING------------- */
+
+.off {
+    opacity: 0;
+
+}
+
+.on {
+    opacity: 1;
+}
